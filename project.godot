@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Score="*uid://cvutdiu0rtb56"
+Bomb="*uid://4hgit6mk63pi"
 
 [display]
 
