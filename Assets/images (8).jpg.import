@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4s5pflksh0oe"
-path="res://.godot/imported/ELR_FallLeaf.png-476151e5bb2718e6cd991fa05a1953e0.ctex"
+uid="uid://c87uerd7vkla4"
+path="res://.godot/imported/images (8).jpg-51e02926457bf50e07ce4525277c09b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/ELR_FallLeaf.png"
-dest_files=["res://.godot/imported/ELR_FallLeaf.png-476151e5bb2718e6cd991fa05a1953e0.ctex"]
+source_file="res://Assets/images (8).jpg"
+dest_files=["res://.godot/imported/images (8).jpg-51e02926457bf50e07ce4525277c09b1.ctex"]
 
 [params]
 

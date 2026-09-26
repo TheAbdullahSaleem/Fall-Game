@@ -5,21 +5,29 @@
 [ext_resource type="PackedScene" uid="uid://bp8m4fv16ycm" path="res://Scenes/bin.tscn" id="2_kln2b"]
 [ext_resource type="PackedScene" uid="uid://gh0bd6tm4bbx" path="res://Scenes/leaf.tscn" id="3_kln2b"]
 [ext_resource type="PackedScene" uid="uid://b4dp8jughabts" path="res://Scenes/Score.tscn" id="5_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://bfh8ymipj0mwr" path="res://Scenes/Bomb.tscn" id="5_vy5pj"]
+[ext_resource type="PackedScene" uid="uid://bj3o83jkpqw10" path="res://Scenes/Lives_label.tscn" id="8_bmxlf"]
+[ext_resource type="PackedScene" uid="uid://dtaevsni2vrxc" path="res://Scenes/game_over.tscn" id="10_bmxlf"]
 
 [node name="Node2D" type="Node2D" unique_id=1596055020]
 script = ExtResource("1_rgh2o")
 
-[node name="CanvasLayer" parent="." unique_id=1053021691 instance=ExtResource("1_idj7w")]
+[node name="CanvasLayer" parent="." unique_id=1073527173 instance=ExtResource("1_idj7w")]
 
 [node name="Bin" parent="." unique_id=1806439526 instance=ExtResource("2_kln2b")]
-position = Vector2(556, 574)
+position = Vector2(569, 487)
+
+[node name="Area2D" parent="." unique_id=1502617159 node_paths=PackedStringArray("menu", "lives_label") instance=ExtResource("5_vy5pj")]
+position = Vector2(310, -235)
+menu = NodePath("../Game over")
+lives_label = NodePath("../Score")
 
 [node name="Leaf" parent="." unique_id=203455496 node_paths=PackedStringArray("score_label") instance=ExtResource("3_kln2b")]
-position = Vector2(563, -41)
+position = Vector2(459, -54)
 score_label = NodePath("../Label")
 
 [node name="Leaf2" parent="." unique_id=463164373 node_paths=PackedStringArray("score_label") instance=ExtResource("3_kln2b")]
-position = Vector2(379, -277)
+position = Vector2(363, -431)
 score_label = NodePath("../Label")
 
 [node name="Label" parent="." unique_id=780764879 instance=ExtResource("5_pbw6q")]
@@ -27,3 +35,16 @@ offset_left = 56.0
 offset_top = 38.0
 offset_right = 156.0
 offset_bottom = 83.0
+
+[node name="Score" parent="." unique_id=264113806 instance=ExtResource("8_bmxlf")]
+offset_left = 989.0
+offset_top = 42.0
+offset_right = 1102.0
+offset_bottom = 87.0
+text = "Lives: 3"
+
+[node name="Game over" parent="." unique_id=439093982 instance=ExtResource("10_bmxlf")]
+offset_left = -22.0
+offset_top = -6.0
+offset_right = 1152.0
+offset_bottom = 685.0

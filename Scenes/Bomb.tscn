@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bfh8ymipj0mwr"]
+
+[ext_resource type="Script" uid="uid://4hgit6mk63pi" path="res://Scripts/Bomb.gd" id="1_cvq6o"]
+[ext_resource type="Texture2D" uid="uid://cnf6ghysjba0k" path="res://Assets/vecteezy_game-bomb-pixelated_54978927.png" id="2_cvq6o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y1q5r"]
+radius = 16.666668
+
+[node name="Area2D" type="Area2D" unique_id=1502617159]
+script = ExtResource("1_cvq6o")
+
+[node name="NewPiskel1_png(3)" type="Sprite2D" parent="." unique_id=1063838520]
+position = Vector2(-0.99998474, 0)
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("2_cvq6o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2137306847]
+position = Vector2(-1, 8)
+scale = Vector2(0.96, 1)
+shape = SubResource("CircleShape2D_y1q5r")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

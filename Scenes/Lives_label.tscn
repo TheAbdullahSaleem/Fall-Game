@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bj3o83jkpqw10"]
+
+[ext_resource type="Script" uid="uid://cvutdiu0rtb56" path="res://Scripts/Score.gd" id="1_0w1aw"]
+
+[node name="Score" type="Label" unique_id=780764879]
+offset_left = 1040.0
+offset_top = 1.0
+offset_right = 1153.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Lives: 0"
+script = ExtResource("1_0w1aw")
